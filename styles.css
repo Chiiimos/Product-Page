@@ -56,3 +56,21 @@ a{
 .buy-but:active{
   transform: translateY(0); 
 }
+.Features{
+  margin-top: 40px;
+}
+.Features h2{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.featurelist{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.featurelist li{
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
