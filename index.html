@@ -1,12 +1,12 @@
-<!-- Helped With AI  -->
+<!-- Note Got Helped From A -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColorPro - Printing Services</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="LOGOCOLORPRO.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="LOGOCOLORPRO.png">
 </head>
 <body>
     <nav>
@@ -32,23 +32,26 @@
     <section id="products" class="products">
         <div class="container">
             <h2>Printing Services</h2>
-            <div class="grid">
-                <div class="card">
-                    <img src="578817647_122275428710224893_6427819045304856485_n.jpg" alt="T-Shirt Product">
-                    <div class="card-content">
-                        <h3>T-Shirt Printing</h3>
-                        <p>Comfortable with High Printing Quality. Durable, vibrant designs on premium fabric.</p>
-                        <div class="sizes">
-                            <button class="size-btn">Small ₱290.00</button>
-                            <button class="size-btn">Medium ₱290.00</button>
-                            <button class="size-btn">Large ₱300.00</button>
+            
+            <!-- T-Shirt Product -->
+            <div class="product-item">
+                <div class="product-row">
+                    <div class="card">
+                        <img src="578817647_122275428710224893_6427819045304856485_n.jpg">
+                            <h3>T-Shirt Printing</h3>
+                            <p>Comfortable with High Printing Quality. Durable, vibrant designs on premium fabric.</p>
+                            <div class="sizes">
+                                <button class="size-btn">Small ₱290.00</button>
+                                <button class="size-btn">Medium ₱290.00</button>
+                                <button class="size-btn">Large ₱300.00</button>
+                            </div>
+                            <button class="buy-btn">Buy Now</button>
                         </div>
-                        <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
-
+                
                 <div class="features">
-                    <h3>T-Shirt To Know</h3>
+                    <h3>T-Shirt Features</h3>
                     <ul>
                         <li>DTF PRINTING</li>
                         <li>BLUE CORNER T-SHIRT</li>
@@ -58,28 +61,33 @@
                         <li>ECO-FRIENDLY INKS</li>
                     </ul>
                 </div>
-                
-                <div class="card2">
-                    <img src="514287819_122269517126224893_469356588220390378_n.jpg" alt="Tarpaulin">
-                    <div class="card-content">
-                        <h3>Tarpaulin Printing</h3>
-                        <p>High printing quality tarpaulins for all your advertising and protection needs.</p>
-                        <div class="sizes2">
-                            <button class="size-btn">3ft 10oz</button>
-                            <button class="size-btn">4ft 10oz</button>
-                            <button class="size-btn">5ft 10oz</button>
-                            <button class="size-btn">6ft 10oz</button>
-                            <button class="size-btn">3ft 13oz</button>
-                            <button class="size-btn">4ft 13oz</button>
-                            <button class="size-btn">5ft 13oz</button>
-                            <button class="size-btn">6ft 13oz</button>
+            </div>
+            
+            <!-- Tarpaulin Product -->
+            <div class="product-item">
+                <div class="product-row">
+                    <div class="card">
+                        <img src="514287819_122269517126224893_469356588220390378_n.jpg" alt="Tarpaulin">
+                        <div class="card-content">
+                            <h3>Tarpaulin Printing</h3>
+                            <p>High printing quality tarpaulins for all your advertising and protection needs.</p>
+                            <div class="sizes2">
+                                <button class="size-btn">3ft 10oz</button>
+                                <button class="size-btn">4ft 10oz</button>
+                                <button class="size-btn">5ft 10oz</button>
+                                <button class="size-btn">6ft 10oz</button>
+                                <button class="size-btn">3ft 13oz</button>
+                                <button class="size-btn">4ft 13oz</button>
+                                <button class="size-btn">5ft 13oz</button>
+                                <button class="size-btn">6ft 13oz</button>
+                            </div>
+                            <button class="buy-btn">Buy Now</button>
                         </div>
-                        <button class="buy-btn">Buy Now</button>
                     </div>
                 </div>
-
+                
                 <div class="features">
-                    <h3>Tarpaulin To know</h3>
+                    <h3>Tarpaulin Features</h3>
                     <ul>
                         <li>WEATHER RESISTANT</li>
                         <li>UV PROTECTION</li>
@@ -93,7 +101,7 @@
         </div>
     </section>
 
-    <section id="contacts" class="products" style="background: #eef4ff;">
+    <section id="contacts" class="products contact-section">
         <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-content">
@@ -107,7 +115,7 @@
                     <div class="contact-card">
                         <i class="fas fa-envelope"></i>
                         <h3>Email Us</h3>
-                        <p>	colorpro.baguio@gmail.com</p>
+                        <p>info@colorpro.com</p>
                     </div>
                 </div>
             </div>
@@ -115,9 +123,29 @@
     </section>
 
     <footer>
-        <p>&copy;ColorPro Printing Station — Designed like your dreams.</p>
+        <p>&copy; 2023 ColorPro Printing Station — Designed like your dreams.</p>
     </footer>
 
     <a href="#home" class="back-to-top">↑</a>
+
+    <script>
+        // Simple smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

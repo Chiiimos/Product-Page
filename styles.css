@@ -1,4 +1,4 @@
-/* note helped with AI */
+/* Note Got Helped From AI */
 *{
     margin: 0;
     padding: 0;
@@ -148,14 +148,27 @@ nav {
     border-radius: 2px;
 }
 
-.grid {
+.product-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
 
-.card, .card2 {
+.product-item {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
@@ -166,11 +179,11 @@ nav {
     transition: transform 0.3s;
 }
 
-.card:hover, .card2:hover {
+.card:hover {
     transform: translateY(-10px);
 }
 
-.card img, .card2 img {
+.card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -181,13 +194,13 @@ nav {
     padding: 25px;
 }
 
-.card h3, .card2 h3 {
+.card h3 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #0071e3;
 }
 
-.card p, .card2 p {
+.card p {
     margin-bottom: 20px;
     color: #666;
     line-height: 1.6;
@@ -241,8 +254,9 @@ nav {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     padding: 25px;
-    min-width: 300px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .features h3 {
@@ -254,13 +268,20 @@ nav {
 
 .features ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .features li {
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+    padding: 12px 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
     display: flex;
     align-items: center;
+    min-width: 200px;
+    background: #f9f9f9;
 }
 
 .features li:before {
@@ -272,6 +293,10 @@ nav {
 }
 
 /* Contact Section */
+.contact-section {
+    background: #eef4ff !important;
+}
+
 .contact-content {
     text-align: center;
     max-width: 600px;
@@ -384,6 +409,16 @@ footer p {
     .nav-links a {
         font-size: 16px;
     }
+    
+    .features ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features li {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -404,7 +439,17 @@ footer p {
         font-size: 28px;
     }
     
-    .card, .card2, .features {
+    .card {
         min-width: 100%;
+    }
+    
+    .sizes, .sizes2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .size-btn {
+        width: 100%;
+        max-width: 200px;
     }
 }
