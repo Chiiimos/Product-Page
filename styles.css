@@ -62,7 +62,119 @@ nav{
     margin-bottom: 20px;
     text-align: left;
 }
-h1{
+.home1 h1{
     font-size: 48px;
     margin-bottom: 20px;
+}
+.home1 p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+.cta-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0071e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.cta-btn:hover{
+    background: #005bb5;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.products h2{
+    text-align: center;
+    font-size: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.grid{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.card, card2, img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.card2 img {
+    margin-left: 70px;
+}
+.card p{
+    margin-bottom: 20px;
+    color: #666;
+}
+.sizes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.sizes2{
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.size-btn{
+    padding: 8px 12px;
+    border: 1px solid #0071e3;
+    border-radius: 4px;
+    background: white;
+    color: #0071e3;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.size-btn:hover{
+    background: #0071e3;
+    color: white;
+}
+.buy-btn{
+    padding: 10px 20px;
+    background: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.buy-btn:hover{
+    background: #005bb5;
+}
+.features{
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    min-width: 300px;
+}
+.features h3{
+    font-size : 1.8rem;
+    margin-bottom: 20px;
+    color: #0071e3;
+}
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+.features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0071e3;
+    color: white;
+    font-weight: 500;
 }
