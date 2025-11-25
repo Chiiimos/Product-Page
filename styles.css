@@ -198,12 +198,15 @@ nav {
     font-size: 24px;
     margin-bottom: 15px;
     color: #0071e3;
+    padding-left: 3%;
 }
 
 .card p {
     margin-bottom: 20px;
     color: #666;
     line-height: 1.6;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .sizes, .sizes2 {
@@ -257,6 +260,7 @@ nav {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .features h3 {
